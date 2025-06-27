@@ -1,9 +1,5 @@
 USE alx_book_store;
-DROP TABLE IF EXISTS Orders;
-DROP TABLE IF EXISTS customers;
-DROP TABLE IF EXISTS books;
-DROP TABLE IF EXISTS authors;
-DROP TABLE IF EXISTS order_details;
+
 
 
 CREATE TABLE IF NOT EXISTS Authors (
@@ -47,5 +43,7 @@ CREATE TABLE IF NOT EXISTS Order_details (
     CONSTRAINT fk_od_book Foreign Key (book_id) REFERENCES Books(book_id)
 );
 
+
+ALTER TABLE Customers DROP COLUMN phone;
 
 
