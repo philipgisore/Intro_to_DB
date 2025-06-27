@@ -1,11 +1,3 @@
-USE alx_book_store;
-DROP TABLE IF EXISTS authors;
-DROP TABLE IF EXISTS books;
-DROP TABLE IF EXISTS customers;
-DROP TABLE IF EXISTS orders;
-DROP TABLE IF EXISTS order_details;
-
-
 CREATE TABLE IF NOT EXISTS authors (
     author_id INT AUTO_INCREMENT PRIMARY KEY,
     author_name VARCHAR(30)
